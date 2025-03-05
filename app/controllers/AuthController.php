@@ -1,7 +1,7 @@
 <?php
-class AuthController {
-    private $db;
-    private $userModel;
+class AuthController { 
+    private $db; 
+    private $userModel; 
 
     public function __construct() {
         $database = new Database();
@@ -27,7 +27,7 @@ class AuthController {
     }
 
     public function register() {
-        require_once 'app/helpers/AuthMiddleware.php';
+        require_once 'app/helpers/AuthMiddleware.php'; 
         AuthMiddleware::isGuest();
 
         if($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -35,7 +35,7 @@ class AuthController {
             $email = $_POST['email'];
             $password = $_POST['password'];
             
-            // First user will be admin, rest will be regular users
+           
             $role = $this->isFirstUser() ? 'admin' : 'user';
 
             if($this->userModel->register($name, $email, $password, $role)) {

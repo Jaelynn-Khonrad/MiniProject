@@ -6,11 +6,11 @@
 </head>
 <body>
     <nav>
-        <h1>Mini Donasi</h1>
+        <h1>Mini Savings</h1>
         <a href="home">Home</a>
     </nav>
 
-    <main>
+    <main class='masuk'>
         <h2>Login</h2>
         <form method="POST" action="login">
             <div>
@@ -23,7 +23,7 @@
             </div>
             <button type="submit">Login</button>
         </form>
-        <p>Don't have an account? <a href="register">Register</a></p>
+        <p>Don't have an account? <a href="register" class="register">Register</a></p>
     </main>
 </body>
 </html>

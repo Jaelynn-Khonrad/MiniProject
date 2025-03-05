@@ -10,7 +10,7 @@
         <a href="home">Home</a>
     </nav>
 
-    <main>
+    <main class="simpan">
         <h2>Make a Saving</h2>
         <form method="POST" action="save">
             <div>

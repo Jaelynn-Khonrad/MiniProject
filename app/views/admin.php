@@ -13,31 +13,30 @@
         </div>
     </nav>
 
-    <main>
+    <main class="admin">
         <h2>Users</h2>
-        <table class="admin-table">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Role</th>
-                    <th>Created At</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach($users as $user): ?>
+            <table class="admin-table">
+                <thead>
                     <tr>
-                        <td><?php echo $user['id']; ?></td>
-                        <td><?php echo htmlspecialchars($user['name']); ?></td>
-                        <td><?php echo htmlspecialchars($user['email']); ?></td>
-                        <td><?php echo $user['role']; ?></td>
-                        <td><?php echo $user['created_at']; ?></td>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Created At</th>
                     </tr>
-                <?php endforeach; ?>
-            </tbody>
-        </table>
-
+                </thead>
+                <tbody>
+                    <?php foreach($users as $user): ?>
+                        <tr>
+                            <td><?php echo $user['id']; ?></td>
+                            <td><?php echo htmlspecialchars($user['name']); ?></td>
+                            <td><?php echo htmlspecialchars($user['email']); ?></td>
+                            <td><?php echo $user['role']; ?></td>
+                            <td><?php echo $user['created_at']; ?></td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
         <h2>All Savings</h2>
         <table class="admin-table">
             <thead>

@@ -24,7 +24,7 @@
         <?php endif; ?>
     </nav>
 
-    <main>
+    <main class="utama">
         <h2>Recent Savings</h2>
         <?php foreach($savings as $saving): ?>
             <div class="donation-card">

@@ -7,10 +7,12 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background: url(../../picture/aura.jpg) no-repeat;
+    background-size: 100vw 100vh;
   }
   
   nav {
-    background: #333;
+    background: #6A90B7;
     color: white;
     padding: 1rem;
     display: flex;
@@ -28,6 +30,7 @@
     padding: 2rem;
     max-width: 800px;
     margin: 0 auto;
+    
   }
   
   form {
@@ -49,14 +52,14 @@
   
   button {
     padding: 0.5rem 1rem;
-    background: #333;
+    background: #7aa7d4;
     color: white;
     border: none;
     cursor: pointer;
   }
   
   button:hover {
-    background: #444;
+    background: #6A90B7;
   }
   
   .donation-card {
@@ -83,7 +86,7 @@
   .admin-table th,
   .admin-table td {
     padding: 0.5rem;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     text-align: left;
   }
   
@@ -95,3 +98,21 @@
     background: #f9f9f9;
   }
   
+  .register, .login{
+    text-decoration: none;
+
+  }
+
+  .donation-card{
+    background:rgba(255, 255, 255, 0.8);
+  }
+
+  .utama{
+    margin-top: 45px;
+  }
+
+  .masuk, .daftar , .simpan , .admin{
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+  }
